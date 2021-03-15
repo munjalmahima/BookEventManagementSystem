@@ -1,0 +1,16 @@
+D:\important\fresher\MVC Assignment Updated\MVC revamp\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\bin\Debug\Nagarro.Sample.Shared.dll
+D:\important\fresher\MVC Assignment Updated\MVC revamp\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\bin\Debug\Nagarro.Sample.Shared.pdb
+D:\important\fresher\MVC Assignment Updated\MVC revamp\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.csproj.CoreCompileInputs.cache
+D:\important\fresher\MVC Assignment Updated\MVC revamp\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.dll
+D:\important\fresher\MVC Assignment Updated\MVC revamp\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.pdb
+C:\Users\suparasjain01\Downloads\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\bin\Debug\Nagarro.Sample.Shared.dll
+C:\Users\suparasjain01\Downloads\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\bin\Debug\Nagarro.Sample.Shared.pdb
+C:\Users\suparasjain01\Downloads\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.csproj.CoreCompileInputs.cache
+C:\Users\suparasjain01\Downloads\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.dll
+C:\Users\suparasjain01\Downloads\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\Assignments\Nagarro.Sample\Nagarro.Sample.Shared\bin\Debug\Nagarro.Sample.Shared.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\Assignments\Nagarro.Sample\Nagarro.Sample.Shared\bin\Debug\Nagarro.Sample.Shared.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\Assignments\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\Assignments\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.csproj.CoreCompileInputs.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\Assignments\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\Assignments\Nagarro.Sample\Nagarro.Sample.Shared\obj\Debug\Nagarro.Sample.Shared.pdb

@@ -1,0 +1,33 @@
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Console.exe.config
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Console.exe
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Console.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\EntityFramework.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Shared.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Shared.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Shared.dll.config
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\EntityFramework.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.csproj.CoreCompileInputs.cache
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.csproj.CopyComplete
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.exe
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.dll.config
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Console.exe.config
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Console.exe
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Console.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\EntityFramework.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Shared.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Shared.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\Nagarro.BookEventManagement.Shared.dll.config
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\EntityFramework.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.csproj.CoreCompileInputs.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.csproj.CopyComplete
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.exe
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Console\obj\Debug\Nagarro.BookEventManagement.Console.pdb

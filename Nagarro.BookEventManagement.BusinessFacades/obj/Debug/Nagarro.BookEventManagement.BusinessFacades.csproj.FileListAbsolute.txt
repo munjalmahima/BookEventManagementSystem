@@ -1,0 +1,20 @@
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.BusinessFacades.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.BusinessFacades.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.Shared.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.Shared.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.Shared.dll.config
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.csproj.CoreCompileInputs.cache
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.csproj.CopyComplete
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.BusinessFacades.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.BusinessFacades.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.Shared.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.Shared.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\bin\Debug\Nagarro.BookEventManagement.Shared.dll.config
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.csproj.CoreCompileInputs.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.csproj.CopyComplete
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.BusinessFacades\obj\Debug\Nagarro.BookEventManagement.BusinessFacades.pdb

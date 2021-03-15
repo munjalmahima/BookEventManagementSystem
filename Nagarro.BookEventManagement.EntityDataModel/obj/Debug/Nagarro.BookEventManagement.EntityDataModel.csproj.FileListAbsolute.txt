@@ -1,0 +1,34 @@
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.dll.config
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\EntityFramework.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\FluentValidation.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.Shared.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.Shared.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.Shared.dll.config
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\EntityFramework.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\FluentValidation.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.csproj.CoreCompileInputs.cache
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.csproj.CopyComplete
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.dll.config
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\EntityFramework.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\FluentValidation.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.Shared.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.Shared.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\Nagarro.BookEventManagement.Shared.dll.config
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\EntityFramework.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\bin\Debug\FluentValidation.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.csproj.CoreCompileInputs.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.csproj.CopyComplete
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.EntityDataModel\obj\Debug\Nagarro.BookEventManagement.EntityDataModel.pdb

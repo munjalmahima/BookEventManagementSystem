@@ -1,0 +1,58 @@
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Tests.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Tests.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Castle.Core.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Moq.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Business.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Shared.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\FluentValidation.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Business.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Shared.pdb
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Shared.dll.config
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Castle.Core.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Moq.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\FluentValidation.xml
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.csproj.CoreCompileInputs.cache
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.csproj.CopyComplete
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.dll
+C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.csproj.CoreCompileInputs.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Tests.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Tests.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Castle.Core.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Moq.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Business.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Shared.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\FluentValidation.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Business.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Shared.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Nagarro.BookEventManagement.Shared.dll.config
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Castle.Core.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\Moq.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\bin\Debug\FluentValidation.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.csproj.CopyComplete
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.dll
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Tests\obj\Debug\Nagarro.BookEventManagement.Tests.pdb
