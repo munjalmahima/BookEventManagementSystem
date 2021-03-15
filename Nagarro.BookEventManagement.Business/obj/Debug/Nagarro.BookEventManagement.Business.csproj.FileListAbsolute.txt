@@ -18,7 +18,6 @@ C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManageme
 C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Business\obj\Debug\Nagarro.BookEventManagement.Business.csproj.CopyComplete
 C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Business\obj\Debug\Nagarro.BookEventManagement.Business.dll
 C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Business\obj\Debug\Nagarro.BookEventManagement.Business.pdb
-C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\obj\Debug\Nagarro.BookEventManagement.Business.csproj.CoreCompileInputs.cache
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\bin\Debug\Nagarro.BookEventManagement.Business.dll
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\bin\Debug\Nagarro.BookEventManagement.Business.pdb
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\bin\Debug\FluentValidation.dll
@@ -35,6 +34,7 @@ C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.Boo
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\bin\Debug\Nagarro.BookEventManagement.EntityDataModel.dll.config
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\bin\Debug\EntityFramework.xml
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\obj\Debug\Nagarro.BookEventManagement.Business.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\obj\Debug\Nagarro.BookEventManagement.Business.csproj.CoreCompileInputs.cache
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\obj\Debug\Nagarro.BookEventManagement.Business.csproj.CopyComplete
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\obj\Debug\Nagarro.BookEventManagement.Business.dll
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Business\obj\Debug\Nagarro.BookEventManagement.Business.pdb

@@ -18,7 +18,7 @@ namespace BookEventManagement.Controllers
             {
                 Events = list
             };
-            return View(list);
+            return View(viewModel);
 
         }
         public ActionResult LoginForm()

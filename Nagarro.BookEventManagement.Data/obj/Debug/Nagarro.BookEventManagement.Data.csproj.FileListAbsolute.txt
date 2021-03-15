@@ -18,8 +18,6 @@ C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManageme
 C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.csproj.CopyComplete
 C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.dll
 C:\Users\mahimamunjal\source\repos\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.pdb
-C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.csprojAssemblyReference.cache
-C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.csproj.CoreCompileInputs.cache
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\bin\Debug\Nagarro.BookEventManagement.Data.dll.config
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\bin\Debug\Nagarro.BookEventManagement.Data.dll
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\bin\Debug\Nagarro.BookEventManagement.Data.pdb
@@ -35,6 +33,8 @@ C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.Boo
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\bin\Debug\EntityFramework.xml
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\bin\Debug\FluentValidation.xml
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.csprojAssemblyReference.cache
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.csproj.CoreCompileInputs.cache
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.csproj.CopyComplete
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.dll
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Data\obj\Debug\Nagarro.BookEventManagement.Data.pdb
