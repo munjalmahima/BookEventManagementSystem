@@ -13,7 +13,7 @@ namespace Nagarro.BookEventManagement.Shared
         public int Id { get; set; }
 
         [EntityPropertyMapping(MappingDirectionType.Both, "Comment1")]
-        public string Comment { get; set; }
+        public string Comment1 { get; set; }
 
         [EntityPropertyMapping(MappingDirectionType.Both, "DatePosted")]
         public DateTime? DatePosted { get; set; }

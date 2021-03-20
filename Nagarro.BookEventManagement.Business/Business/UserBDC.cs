@@ -26,22 +26,23 @@ namespace Nagarro.BookEventManagement.Business
         {
             this.dacFactory = dacFactory;
         }
-
-        public UserDTO GetUser(int UserId)
-        {
-            IUserDAC userDAC = (IUserDAC)dacFactory.Create(DACType.UserDAC);
-            return userDAC.GetUser(UserId);
-        }
         #endregion
 
-        public List<UserDTO> GetUsers()
+        public UserDTO GetUserById(int UserId)
         {
             IUserDAC userDAC = (IUserDAC)dacFactory.Create(DACType.UserDAC);
-            List<UserDTO> result = userDAC.GetUsers();
+            return userDAC.GetUserById(UserId);
+        }
+       
+
+        public List<UserDTO> GetAllUsers()
+        {
+            IUserDAC userDAC = (IUserDAC)dacFactory.Create(DACType.UserDAC);
+            List<UserDTO> result = userDAC.GetAllUsers();
             return result;
         }
 
-        public OperationResult<UserDTO> NewUser(UserDTO userDTO)
+        public OperationResult<UserDTO> RegisterUser(UserDTO userDTO)
         {
             OperationResult<UserDTO> retVal = null;
             try
@@ -50,7 +51,7 @@ namespace Nagarro.BookEventManagement.Business
                 if (validationResult.IsValid)
                 {
                     IUserDAC userDAC = (IUserDAC)dacFactory.Create(DACType.UserDAC);
-                    UserDTO resultDTO = userDAC.NewUser(userDTO);
+                    UserDTO resultDTO = userDAC.RegisterUser(userDTO);
                     if (resultDTO != null)
                     {
                         retVal = OperationResult<UserDTO>.CreateSuccessResult(resultDTO);
@@ -76,6 +77,12 @@ namespace Nagarro.BookEventManagement.Business
             }
 
             return retVal;
+        }
+
+        public UserDTO GetUserByEmailAndPassword(string Email, string Password)
+        {
+            IUserDAC userDAC = (IUserDAC)dacFactory.Create(DACType.UserDAC);
+            return userDAC.GetUserByEmailAndPassword(Email, Password);
         }
     }
 }

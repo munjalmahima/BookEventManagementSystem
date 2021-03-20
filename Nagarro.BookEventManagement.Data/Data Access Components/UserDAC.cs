@@ -16,18 +16,18 @@ namespace Nagarro.BookEventManagement.Data
 
         }
 
-        public UserDTO NewUser(UserDTO userDTO)
+        public UserDTO RegisterUser(UserDTO userDTO)
         {
             UserDTO retVal = null;
             try
             {
-                using (BookEventManagementEntities dbContext = new BookEventManagementEntities())
+                using (BookEventManagementEntities userContext = new BookEventManagementEntities())
                 {
                     User u = new User();
                     EntityConverter.FillEntityFromDTO(userDTO, u);
 
-                    dbContext.Users.Add(u);
-                    dbContext.SaveChanges();
+                    userContext.Users.Add(u);
+                    userContext.SaveChanges();
 
                     EntityConverter.FillDTOFromEntity(u, userDTO);
                     retVal = userDTO;
@@ -42,12 +42,12 @@ namespace Nagarro.BookEventManagement.Data
             return retVal;
         }
 
-        public List<UserDTO> GetUsers()
+        public List<UserDTO> GetAllUsers()
         {
             List<UserDTO> userList = new List<UserDTO>();
-            using (var context = new BookEventManagementEntities())
+            using (var userContext = new BookEventManagementEntities())
             {
-                foreach (var u in context.Users)
+                foreach (var u in userContext.Users)
                 {
                     UserDTO userDTO = new UserDTO();
                     EntityConverter.FillDTOFromEntity(u, userDTO);
@@ -57,20 +57,32 @@ namespace Nagarro.BookEventManagement.Data
             }
         }
 
-        public UserDTO GetUser(int UserId)
+        public UserDTO GetUserById(int UserId)
         {
             UserDTO userDTO = new UserDTO();
-            List<UserDTO> userList = GetUsers();
-            foreach (var a in userList)
+            using (var userContext = new BookEventManagementEntities())
             {
-                if (a.Id == UserId)
+                var result = userContext.Users.FirstOrDefault(user => user.Id == UserId);
+                if (result != null)
                 {
-                    EntityConverter.FillDTOFromEntity(a,userDTO);
+                    EntityConverter.FillDTOFromEntity(result, userDTO);
                 }
             }
             return userDTO;
         }
 
-
+        public UserDTO GetUserByEmailAndPassword(string Email, string Password)
+        {
+            UserDTO userDTO = new UserDTO();
+            using (var userContext = new BookEventManagementEntities())
+            {
+                var result = userContext.Users.FirstOrDefault(user => user.Email==Email && user.Password==Password);
+                if (result != null)
+                {
+                    EntityConverter.FillDTOFromEntity(result, userDTO);
+                }
+            }
+            return userDTO;
+        }
     }
 }

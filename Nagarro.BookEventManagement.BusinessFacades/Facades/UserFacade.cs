@@ -17,25 +17,29 @@ namespace Nagarro.BookEventManagement.BusinessFacades
 
         }
 
-        public UserDTO GetUser(int UserId)
+        public UserDTO GetUserById(int UserId)
         {
-
             IUserBDC userBDC = (IUserBDC)BDCFactory.Instance.Create(BDCType.UserBDC);
-            return userBDC.GetUser(UserId);
+            return userBDC.GetUserById(UserId);
         }
 
-        public List<UserDTO> GetUsers()
+        public List<UserDTO> GetAllUsers()
         {
             IUserBDC userBDC = (IUserBDC)BDCFactory.Instance.Create(BDCType.UserBDC);
-            List<UserDTO> result = userBDC.GetUsers();
+            List<UserDTO> result = userBDC.GetAllUsers();
             return result;
         }
 
-        public OperationResult<UserDTO> NewUser(UserDTO userDTO)
+        public OperationResult<UserDTO> RegisterUser(UserDTO userDTO)
         {
             IUserBDC userBDC = (IUserBDC)BDCFactory.Instance.Create(BDCType.UserBDC);
-            return userBDC.NewUser(userDTO);
+            return userBDC.RegisterUser(userDTO);
         }
 
+        public UserDTO GetUserByEmailAndPassword(string Email, string Password)
+        {
+            IUserBDC userBDC = (IUserBDC)BDCFactory.Instance.Create(BDCType.UserBDC);
+            return userBDC.GetUserByEmailAndPassword(Email,Password);
+        }
     }
 }

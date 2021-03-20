@@ -21,13 +21,20 @@ namespace Nagarro.BookEventManagement.Data
             EventDTO retVal = null;
             try
             {
-                using (BookEventManagementEntities dbContext = new BookEventManagementEntities())
+                using (BookEventManagementEntities eventContext = new BookEventManagementEntities())
                 {
                     Event e = new Event();
                     Address address = new Address();
                     EntityConverter.FillEntityFromDTO(eventDTO.Address, address);
 
-                    List<AddressDTO> addressList = GetAddresses();
+                    List<AddressDTO> addressList = new List<AddressDTO>();
+                    foreach (var a in eventContext.Addresses)
+                    {
+                        AddressDTO addressDTO = new AddressDTO();
+                        EntityConverter.FillDTOFromEntity(a, addressDTO);
+                        addressList.Add(addressDTO);
+                    }
+
                     bool flag = false;
                     foreach (var i in addressList)
                     {
@@ -47,16 +54,17 @@ namespace Nagarro.BookEventManagement.Data
                             }
                         }
                     }
+
                     if (flag == false)
                     {
-                        var address1 = dbContext.Addresses.Add(address);
+                        var address1 = eventContext.Addresses.Add(address);
                         eventDTO.AddressId = address1.Id;
                     }
 
                     EntityConverter.FillEntityFromDTO(eventDTO, e);
 
-                    dbContext.Events.Add(e);
-                    dbContext.SaveChanges();
+                    eventContext.Events.Add(e);
+                    eventContext.SaveChanges();
 
                     EntityConverter.FillDTOFromEntity(e, eventDTO);
                     retVal = eventDTO;
@@ -71,27 +79,12 @@ namespace Nagarro.BookEventManagement.Data
             return retVal;
         }
 
-        public List<AddressDTO> GetAddresses()
-        {
-            List<AddressDTO> addressList = new List<AddressDTO>();
-            using (var context = new BookEventManagementEntities())
-            {
-                foreach (var a in context.Addresses)
-                {
-                    AddressDTO addressDTO = new AddressDTO();
-                    EntityConverter.FillDTOFromEntity(a, addressDTO);
-                    addressList.Add(addressDTO);
-                }
-                return addressList;
-            }
-        }
-
-        public List<EventDTO> GetEvents()
+        public List<EventDTO> GetAllEvents()
         {
             List<EventDTO> eventList = new List<EventDTO>();
-            using (var context = new BookEventManagementEntities())
+            using (var eventContext = new BookEventManagementEntities())
             {
-                foreach (var e in context.Events)
+                foreach (var e in eventContext.Events)
                 {
                     EventDTO eventDTO = new EventDTO();
                     EntityConverter.FillDTOFromEntity(e, eventDTO);
@@ -102,76 +95,74 @@ namespace Nagarro.BookEventManagement.Data
             return eventList;
         }
 
-        public AddressDTO GetEventAddress(int AddressId)
-        {
-            AddressDTO add = new AddressDTO();
-            List<AddressDTO> addressList = GetAddresses();
-            foreach (var a in addressList)
-            {
-                if (a.Id==AddressId)
-                {
-                    EntityConverter.FillDTOFromEntity(a,add);
-                }
-            }
-            return add;
-        }
-
-        public EventDTO GetEvent(int EventId)
+        public EventDTO GetEventById(int EventId)
         {
             EventDTO eventDTO = new EventDTO();
-            List<EventDTO> eventList = GetEvents();
-            foreach (var a in eventList)
+            AddressDTO addressDTO = new AddressDTO();
+            using (var eventContext = new BookEventManagementEntities())
             {
-                if (a.Id == EventId)
+                var result = eventContext.Events.Include("Address").FirstOrDefault(ev => ev.Id == EventId);
+                if (result != null)
                 {
-                    eventDTO.Address = GetEventAddress(a.AddressId);
-                    EntityConverter.FillDTOFromEntity(a,eventDTO);
-                }
-            }
-            return eventDTO;
-        }
-
-        public void UpdateEvent(EventDTO eventDTO)
-        {
-            using (BookEventManagementEntities updateContext = new BookEventManagementEntities())
-            {
-                Event e = new Event();
-                var result = updateContext.Events.Include("Address").SingleOrDefault(ev => ev.Id == eventDTO.Id);
-                
-                if(result!=null)
-                {
+                    EntityConverter.FillDTOFromEntity(result.Address, addressDTO);
+                    eventDTO.Address = addressDTO;
                     EntityConverter.FillDTOFromEntity(result, eventDTO);
-                    eventDTO.Title = "Book-A-Holic";
-                    EntityConverter.FillEntityFromDTO(eventDTO,e);
-                    updateContext.SaveChanges();
-                    Console.ReadKey();
                 }
-             
-
-                //EntityConverter.FillEntityFromDTO(eventDTO, e);
-                Console.WriteLine(e.Id);
-                Console.WriteLine(e.Title);
-                
             }
-
+            return eventDTO; 
         }
 
-        public void DeleteEvent(EventDTO eventDTO)
+        public bool UpdateEvent(EventDTO eventDTO)
         {
-            using (BookEventManagementEntities deleteContext = new BookEventManagementEntities())
+            using (BookEventManagementEntities eventContext = new BookEventManagementEntities())
             {
-                
                 Event e = new Event();
+                e = eventContext.Events.Include("Address").SingleOrDefault(ev => ev.Id == eventDTO.Id);
+                
+                if(e!=null)
+                {
+                    
+                    EntityConverter.FillEntityFromDTO(eventDTO,e);
+                    try
+                    {
+                        eventContext.SaveChanges();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new DACException("No records found to update.",ex);
+                    } 
+                }
 
-                EntityConverter.FillEntityFromDTO(eventDTO, e);
-                Console.WriteLine(e.Id);
-                Console.WriteLine(e.Title);
-
-                deleteContext.Events.Remove(e);
-
-               deleteContext.SaveChanges();
             }
+            return true;
         }
+
+        public bool DeleteEvent(EventDTO eventDTO)
+        {
+            using (BookEventManagementEntities eventContext = new BookEventManagementEntities())
+            {
+
+                Event e=eventContext.Events.Include("Address").SingleOrDefault(ev => ev.Id == eventDTO.Id);
+                
+                if(e!=null)
+                {
+                    eventContext.Events.Remove(e);
+                    try
+                    {
+                        eventContext.SaveChanges();
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Error");
+                        return false;
+                    }
+
+                }
+          
+            }
+            return true;
+        }
+
     }
 
        

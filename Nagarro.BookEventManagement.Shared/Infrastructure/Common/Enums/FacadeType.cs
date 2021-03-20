@@ -23,8 +23,11 @@ namespace Nagarro.BookEventManagement.Shared
         [QualifiedTypeName("Nagarro.BookEventManagement.BusinessFacades.dll", "Nagarro.BookEventManagement.BusinessFacades.UserFacade")]
         UserFacade = 2,
 
-        [QualifiedTypeName("Nagarro.BookEventManagement.BusinessFacades.dll", "Nagarro.BookEventManagement.BusinessFacades. BookingEnrollment Facade")]
-        BookingEnrollment = 3
+        [QualifiedTypeName("Nagarro.BookEventManagement.BusinessFacades.dll", "Nagarro.BookEventManagement.BusinessFacades.BookingEnrollmentFacade")]
+        BookingEnrollment = 3,
+
+        [QualifiedTypeName("Nagarro.BookEventManagement.BusinessFacades.dll", "Nagarro.BookEventManagement.BusinessFacades.CommentFacade")]
+        CommentFacade = 4
 
 
 

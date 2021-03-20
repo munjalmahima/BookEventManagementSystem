@@ -13,7 +13,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="UserId" Type="int" />
     <Property Name="EventsId" Type="int" />
   </EntityType>
@@ -21,8 +21,8 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
-    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="DatePosted" Type="datetime" Nullable="false" />
     <Property Name="UserId" Type="int" Nullable="false" />
     <Property Name="EventId" Type="int" Nullable="false" />
@@ -31,8 +31,8 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
-    <Property Name="Comment" Type="varchar" MaxLength="50" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="DatePosted" Type="datetime" />
     <Property Name="UserId" Type="int" />
     <Property Name="EventId" Type="int" />
@@ -46,7 +46,7 @@
     <Property Name="AddressId" Type="int" Nullable="false" />
     <Property Name="Date" Type="datetime" Nullable="false" />
     <Property Name="StartTime" Type="datetime" Nullable="false" />
-    <Property Name="Type" Type="varchar" MaxLength="50" />
+    <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Duration" Type="int" />
     <Property Name="Description" Type="varchar" MaxLength="50" />
     <Property Name="OtherDetails" Type="varchar" MaxLength="50" />

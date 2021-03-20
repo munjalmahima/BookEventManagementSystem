@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access Components\BookingEnrollmentDAC.cs" />
+    <Compile Include="Data Access Components\CommentDAC.cs" />
     <Compile Include="Data Access Components\EventDAC.cs" />
     <Compile Include="Data Access Components\UserDAC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

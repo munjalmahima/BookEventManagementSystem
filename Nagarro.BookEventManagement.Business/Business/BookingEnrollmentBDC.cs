@@ -26,23 +26,29 @@ namespace Nagarro.BookEventManagement.Business
         {
             this.dacFactory = dacFactory;
         }
+
+        public BookingEnrollmentDTO CreateBooking(BookingEnrollmentDTO bookingEnrollmentDTO)
+        {
+            IBookingEnrollmentDAC bookingDAC = (IBookingEnrollmentDAC)dacFactory.Create(DACType.BookingEnrollmentDAC);
+            return bookingDAC.CreateBooking(bookingEnrollmentDTO);
+        }
         #endregion
 
-        public BookingEnrollmentDTO CreateBooking(int EventId, int UserId)
+
+
+        
+
+        public List<EventDTO> GetAllEventsOfAUser(int UserId)
         {
-            throw new NotImplementedException();
+            IBookingEnrollmentDAC bookingDAC = (IBookingEnrollmentDAC)dacFactory.Create(DACType.BookingEnrollmentDAC);
+            return bookingDAC.GetAllEventsOfAUser(UserId);
         }
 
-       
-
-        public List<EventDTO> GetEventsOfAUser(int UserId)
+        public List<UserDTO> GetAllUsersOfAEvent(int EventId)
         {
-            throw new NotImplementedException();
+            IBookingEnrollmentDAC bookingDAC = (IBookingEnrollmentDAC)dacFactory.Create(DACType.BookingEnrollmentDAC);
+            return bookingDAC.GetAllUsersOfAEvent(EventId);
         }
-
-        public List<UserDTO> GetUsersOfAEvent(int EventId)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

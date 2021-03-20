@@ -44,12 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Functional\BusinessDomainComponents\IBookingEnrollmentBDC.cs" />
+    <Compile Include="Functional\BusinessDomainComponents\ICommentBDC.cs" />
     <Compile Include="Functional\BusinessDomainComponents\IEventBDC.cs" />
     <Compile Include="Functional\BusinessDomainComponents\IUserBDC.cs" />
     <Compile Include="Functional\BusinessFacades\IBookingEnrollmentFacade.cs" />
+    <Compile Include="Functional\BusinessFacades\ICommentFacade.cs" />
     <Compile Include="Functional\BusinessFacades\IEventFacade.cs" />
     <Compile Include="Functional\BusinessFacades\IUserFacade.cs" />
     <Compile Include="Functional\DataAccessComponents\IBookingEnrollmentDAC.cs" />
+    <Compile Include="Functional\DataAccessComponents\ICommentDAC.cs" />
     <Compile Include="Functional\DataAccessComponents\IEventDAC.cs" />
     <Compile Include="Functional\DataAccessComponents\IUserDAC.cs" />
     <Compile Include="Functional\DataTransferObjects\AddressDTO.cs" />

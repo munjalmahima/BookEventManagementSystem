@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Nagarro.BookEventManagement.Shared
 {
-    public interface IBookingEnrollmentFacade
+    public interface IBookingEnrollmentFacade:IFacade
     {
-        BookingEnrollmentDTO CreateBooking(int EventId, int UserId);
-        List<UserDTO> GetUsersOfAEvent(int EventId);
-        List<EventDTO> GetEventsOfAUser(int UserId);
+        BookingEnrollmentDTO CreateBooking(BookingEnrollmentDTO bookingEnrollmentDTO);
+        List<UserDTO> GetAllUsersOfAEvent(int EventId);
+        List<EventDTO> GetAllEventsOfAUser(int UserId); 
     }
 }

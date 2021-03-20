@@ -21,31 +21,31 @@ namespace Nagarro.BookEventManagement.BusinessFacades
             return eventBDC.CreateEvent(eventDTO);
         }
 
-        public void DeleteEvent(EventDTO EventDTO)
+        public bool DeleteEvent(EventDTO EventDTO)
         {
             IEventBDC eventBDC = (IEventBDC)BDCFactory.Instance.Create(BDCType.EventBDC);
-            eventBDC.DeleteEvent(EventDTO);
+            return eventBDC.DeleteEvent(EventDTO);
         }
 
-        public EventDTO GetEvent(int EventId)
+        public EventDTO GetEventById(int EventId)
         {
             IEventBDC eventBDC = (IEventBDC)BDCFactory.Instance.Create(BDCType.EventBDC);
-            return eventBDC.GetEvent(EventId);
+            return eventBDC.GetEventById(EventId);
         }
 
         
 
-        public List<EventDTO> GetEvents()
+        public List<EventDTO> GetAllEvents()
         {
             IEventBDC eventBDC = (IEventBDC)BDCFactory.Instance.Create(BDCType.EventBDC);
-            List<EventDTO> result = eventBDC.GetEvents();
+            List<EventDTO> result = eventBDC.GetAllEvents();
             return result;
         }
 
-        public void UpdateEvent(EventDTO EventDTO)
+        public bool UpdateEvent(EventDTO EventDTO)
         {
             IEventBDC eventBDC = (IEventBDC)BDCFactory.Instance.Create(BDCType.EventBDC);
-            eventBDC.UpdateEvent(EventDTO);
+            return eventBDC.UpdateEvent(EventDTO);
         }
     }
 }

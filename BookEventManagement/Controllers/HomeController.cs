@@ -13,7 +13,7 @@ namespace BookEventManagement.Controllers
         public ActionResult Index()
         { 
             IEventFacade eventFacade = (IEventFacade)FacadeFactory.Instance.Create(FacadeType.EventFacade);
-            List<EventDTO> list = eventFacade.GetEvents();
+            List<EventDTO> list = eventFacade.GetAllEvents();
             var viewModel = new EventViewModel
             {
                 Events = list

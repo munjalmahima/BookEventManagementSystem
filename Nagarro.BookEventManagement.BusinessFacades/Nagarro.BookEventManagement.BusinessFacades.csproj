@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Facades\BookingEnrollmentFacade.cs" />
+    <Compile Include="Facades\CommentFacade.cs" />
     <Compile Include="Facades\EventFacade.cs" />
     <Compile Include="Facades\UserFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,11 +8,10 @@ namespace Nagarro.BookEventManagement.Shared
     [EntityMapping("Event", MappingType.TotalExplicit)]
     public class EventDTO : DTOBase
     {
-        /*public EventDTO()
+        public EventDTO()
         {
-            this.address = new AddressDTO();
-
-        }*/
+            Type = "public";
+        }
 
         [EntityPropertyMapping(MappingDirectionType.Both, "Id")]
         public int Id{ get; set; }

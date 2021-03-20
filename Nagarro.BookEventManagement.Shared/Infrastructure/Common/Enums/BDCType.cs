@@ -17,7 +17,10 @@
         UserBDC = 2,
 
         [QualifiedTypeName("Nagarro.BookEventManagement.Business.dll", "Nagarro.BookEventManagement.Business.BookingEnrollmentBDC")]
-        BookingEnrollmentBDC = 3
+        BookingEnrollmentBDC = 3,
+
+        [QualifiedTypeName("Nagarro.BookEventManagement.Business.dll", "Nagarro.BookEventManagement.Business.CommentBDC")]
+        CommentBDC = 4
 
 
     }

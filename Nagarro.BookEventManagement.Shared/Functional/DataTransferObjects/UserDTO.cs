@@ -9,6 +9,11 @@ namespace Nagarro.BookEventManagement.Shared
     [EntityMapping("User", MappingType.TotalExplicit)]
     public class UserDTO:DTOBase
     {
+        public UserDTO()
+        {
+            Type = "normal";
+        }
+
         [EntityPropertyMapping(MappingDirectionType.Both, "Id")]
         public int Id { get; set; }
 

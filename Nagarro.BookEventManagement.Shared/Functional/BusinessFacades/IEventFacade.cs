@@ -9,10 +9,10 @@ namespace Nagarro.BookEventManagement.Shared
     public interface IEventFacade:IFacade
     {
         OperationResult<EventDTO> CreateEvent(EventDTO EventDTO);
-        List<EventDTO> GetEvents();
-        EventDTO GetEvent(int EventId);
-        void UpdateEvent(EventDTO EventDTO);
-        void DeleteEvent(EventDTO EventDTO);
+        List<EventDTO> GetAllEvents();
+        EventDTO GetEventById(int EventId);
+        bool UpdateEvent(EventDTO EventDTO);
+        bool DeleteEvent(EventDTO EventDTO);
 
     }
 }

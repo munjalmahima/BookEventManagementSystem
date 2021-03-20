@@ -72,16 +72,16 @@ namespace Nagarro.BookEventManagement.Business
             return retVal;
         }
 
-        public void DeleteEvent(EventDTO EventDTO)
+        public bool DeleteEvent(EventDTO EventDTO)
         {
             IEventDAC eventDAC = (IEventDAC)dacFactory.Create(DACType.EventDAC);
-            eventDAC.DeleteEvent(EventDTO);
+            return eventDAC.DeleteEvent(EventDTO);
         }
 
-        public EventDTO GetEvent(int EventId)
+        public EventDTO GetEventById(int EventId)
         {
             IEventDAC eventDAC = (IEventDAC)dacFactory.Create(DACType.EventDAC);
-            return eventDAC.GetEvent(EventId);
+            return eventDAC.GetEventById(EventId);
         }
 
        
@@ -90,17 +90,17 @@ namespace Nagarro.BookEventManagement.Business
         #region Private Methods
 
         #endregion
-        public List<EventDTO> GetEvents()
+        public List<EventDTO> GetAllEvents()
         {
             IEventDAC eventDAC = (IEventDAC)dacFactory.Create(DACType.EventDAC);
-            List<EventDTO> result = eventDAC.GetEvents();
+            List<EventDTO> result = eventDAC.GetAllEvents();
             return result;
         }
 
-        public void UpdateEvent(EventDTO EventDTO)
+        public bool UpdateEvent(EventDTO EventDTO)
         {
             IEventDAC eventDAC = (IEventDAC)dacFactory.Create(DACType.EventDAC);
-            eventDAC.UpdateEvent(EventDTO);
+            return eventDAC.UpdateEvent(EventDTO);
         }
     }
 }

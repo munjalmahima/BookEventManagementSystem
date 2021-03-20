@@ -25,7 +25,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="DatePosted" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="UserId" Type="Int32" Nullable="false" />
     <Property Name="EventId" Type="Int32" Nullable="false" />
@@ -37,7 +37,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" />
-    <Property Name="Comment1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Comment1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="DatePosted" Type="DateTime" Precision="3" />
     <Property Name="UserId" Type="Int32" />
     <Property Name="EventId" Type="Int32" />
@@ -53,7 +53,7 @@
     <Property Name="AddressId" Type="Int32" Nullable="false" />
     <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Duration" Type="Int32" />
     <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="OtherDetails" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />

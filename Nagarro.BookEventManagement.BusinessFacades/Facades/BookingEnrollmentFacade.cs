@@ -15,22 +15,24 @@ namespace Nagarro.BookEventManagement.BusinessFacades
 
         }
 
-        public BookingEnrollmentDTO CreateBooking(int EventId, int UserId)
+        public BookingEnrollmentDTO CreateBooking(BookingEnrollmentDTO bookingEnrollmentDTO)
         {
             IBookingEnrollmentBDC bookingBDC = (IBookingEnrollmentBDC)BDCFactory.Instance.Create(BDCType.BookingEnrollmentBDC);
-            return bookingBDC.CreateBooking(EventId,UserId);
+            return bookingBDC.CreateBooking(bookingEnrollmentDTO);
         }
 
-        public List<EventDTO> GetEventsOfAUser(int UserId)
+        
+        public List<EventDTO> GetAllEventsOfAUser(int UserId)
         {
             IBookingEnrollmentBDC bookingBDC = (IBookingEnrollmentBDC)BDCFactory.Instance.Create(BDCType.BookingEnrollmentBDC);
-            return bookingBDC.GetEventsOfAUser(UserId);
+            return bookingBDC.GetAllEventsOfAUser(UserId);
         }
 
-        public List<UserDTO> GetUsersOfAEvent(int EventId)
+        public List<UserDTO> GetAllUsersOfAEvent(int EventId)
         {
             IBookingEnrollmentBDC bookingBDC = (IBookingEnrollmentBDC)BDCFactory.Instance.Create(BDCType.BookingEnrollmentBDC);
-            return bookingBDC.GetUsersOfAEvent(EventId);
+            return bookingBDC.GetAllUsersOfAEvent(EventId);
         }
+        
     }
 }

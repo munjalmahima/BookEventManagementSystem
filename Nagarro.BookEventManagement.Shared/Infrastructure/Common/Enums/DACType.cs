@@ -17,7 +17,10 @@
         UserDAC = 2,
 
         [QualifiedTypeName("Nagarro.BookEventManagement.Data.dll", "Nagarro.BookEventManagement.Data.BookingEnrollmentDAC")]
-        BookingEnrollmentDAC = 3
+        BookingEnrollmentDAC = 3,
+
+        [QualifiedTypeName("Nagarro.BookEventManagement.Data.dll", "Nagarro.BookEventManagement.Data.CommentDAC")]
+        CommentDAC = 4
 
     }
 }
