@@ -70,10 +70,10 @@ namespace Nagarro.BookEventManagement.Business
             return commentDAC.GetAllCommentsOfAnEvent(EventId);
         }
 
-        public List<CommentDTO> GetAllCommentsOfAUser(int UserId)
+        public List<CommentDTO> GetAllCommentsOfAUser(string Username)
         {
             ICommentDAC commentDAC = (ICommentDAC)dacFactory.Create(DACType.CommentDAC);
-            return commentDAC.GetAllCommentsOfAUser(UserId);
+            return commentDAC.GetAllCommentsOfAUser(Username);
         }
         #endregion
     }

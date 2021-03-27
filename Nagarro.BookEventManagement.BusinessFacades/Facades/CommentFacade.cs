@@ -27,10 +27,10 @@ namespace Nagarro.BookEventManagement.BusinessFacades
             return commentBDC.GetAllCommentsOfAnEvent(EventId);
         }
 
-        public List<CommentDTO> GetAllCommentsOfAUser(int UserId)
+        public List<CommentDTO> GetAllCommentsOfAUser(string Username)
         {
             ICommentBDC commentBDC = (ICommentBDC)BDCFactory.Instance.Create(BDCType.CommentBDC);
-            return commentBDC.GetAllCommentsOfAUser(UserId);
+            return commentBDC.GetAllCommentsOfAUser(Username);
         }
     }
 }

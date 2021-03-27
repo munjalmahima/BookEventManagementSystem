@@ -26,8 +26,17 @@ namespace Nagarro.BookEventManagement.Data
                     User u = new User();
                     EntityConverter.FillEntityFromDTO(userDTO, u);
 
-                    userContext.Users.Add(u);
-                    userContext.SaveChanges();
+                    try
+                    {
+                        userContext.Users.Add(u);
+                        userContext.SaveChanges();
+                    }
+
+                    catch (Exception ex)
+                    {
+                        ExceptionManager.HandleException(ex);
+                        throw new DACException(ex.Message, ex);
+                    }
 
                     EntityConverter.FillDTOFromEntity(u, userDTO);
                     retVal = userDTO;

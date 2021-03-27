@@ -15,7 +15,7 @@ namespace Nagarro.BookEventManagement.Business
             RuleFor(dto => dto.Id).NotNull().NotEmpty();
             RuleFor(dto => dto.Email).NotNull().NotEmpty();
             RuleFor(dto => dto.Name).NotNull().NotEmpty();
-            RuleFor(dto => dto.Password).NotNull().NotEmpty().MaximumLength(6);
+            RuleFor(dto => dto.Password).NotNull().NotEmpty();
 
         }
     }

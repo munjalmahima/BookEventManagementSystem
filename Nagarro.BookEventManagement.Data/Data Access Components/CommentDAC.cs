@@ -26,8 +26,18 @@ namespace Nagarro.BookEventManagement.Data
                     Comment comment = new Comment();
                     EntityConverter.FillEntityFromDTO(commentDTO, comment);
 
-                    commentContext.Comments.Add(comment);
-                    commentContext.SaveChanges();
+                   
+                    try
+                    {
+                        commentContext.Comments.Add(comment);
+                        commentContext.SaveChanges();
+                    }
+                    catch (Exception ex)
+                    {
+                        ExceptionManager.HandleException(ex);
+                        throw new DACException(ex.Message, ex);
+                    }
+
 
                     EntityConverter.FillDTOFromEntity(comment, commentDTO);
                     retVal = commentDTO;
@@ -44,27 +54,19 @@ namespace Nagarro.BookEventManagement.Data
 
         public List<CommentDTO> GetAllCommentsOfAnEvent(int EventId)
         {
-            //EventDTO eventDTO = new EventDTO();
-
-            //List <int> commentIdList= new List<int>();
-
+           
             List<CommentDTO> commentList = new List<CommentDTO>();
+           
             using (BookEventManagementEntities commentContext = new BookEventManagementEntities())
             {
-                var comments = commentContext.Comments.Include("Event").Where(ev => ev.EventId == EventId).Select(ev=>ev);
+                var comments = commentContext.Comments.Include("Event").Where(comment => comment.EventId == EventId).Select(comment=>comment);
 
                 foreach(var comment in comments)
                 {
                     CommentDTO commentDTO = new CommentDTO();
-                    /*Console.WriteLine("Comment Entity");
-                    Console.WriteLine(comment.Id);
-                    Console.WriteLine(comment.Comment1);
-                    Console.WriteLine(comment.EventId);
-                    
-                    Console.WriteLine("Comment DTO");
-                    Console.WriteLine(commentDTO.Id);
-                    Console.WriteLine(commentDTO.Comment1);
-                    Console.WriteLine(commentDTO.EventId);*/
+                    EventDTO eventDTO = new EventDTO();
+                    EntityConverter.FillDTOFromEntity(comment.Event, eventDTO);
+                    commentDTO.Event = eventDTO;
                     EntityConverter.FillDTOFromEntity(comment, commentDTO);
                     commentList.Add(commentDTO);
 
@@ -74,10 +76,21 @@ namespace Nagarro.BookEventManagement.Data
             return commentList;
         }
 
-        public List<CommentDTO> GetAllCommentsOfAUser(int UserId)
+        public List<CommentDTO> GetAllCommentsOfAUser(string Username)
         {
-            List<CommentDTO> comments = new List<CommentDTO>();
-            return comments;
+            List<CommentDTO> commentList = new List<CommentDTO>();
+            using (BookEventManagementEntities commentContext = new BookEventManagementEntities())
+            {
+                var comments = commentContext.Comments.Where(comment => comment.Username==Username.Trim()).Select(comment => comment);
+
+                foreach (var comment in comments)
+                {
+                    CommentDTO commentDTO = new CommentDTO();
+                    EntityConverter.FillDTOFromEntity(comment, commentDTO);
+                    commentList.Add(commentDTO);
+                }
+            }
+            return commentList;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Nagarro.BookEventManagement.Shared
     public interface ICommentBDC:IBusinessDomainComponent
     {
         OperationResult<CommentDTO> AddNewComment(CommentDTO commentDTO);
-        List<CommentDTO> GetAllCommentsOfAUser(int UserId);
+        List<CommentDTO> GetAllCommentsOfAUser(string Username);
         List<CommentDTO> GetAllCommentsOfAnEvent(int EventId);
     }
 }

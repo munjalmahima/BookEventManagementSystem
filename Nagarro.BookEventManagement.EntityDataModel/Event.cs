@@ -18,7 +18,6 @@ namespace Nagarro.BookEventManagement.EntityDataModel
         public Event()
         {
             this.Booking_Enrollment = new HashSet<Booking_Enrollment>();
-            this.Characters = new HashSet<Character>();
             this.Comments = new HashSet<Comment>();
         }
     
@@ -26,18 +25,17 @@ namespace Nagarro.BookEventManagement.EntityDataModel
         public string Title { get; set; }
         public int AddressId { get; set; }
         public System.DateTime Date { get; set; }
-        public System.DateTime StartTime { get; set; }
+        public System.TimeSpan StartTime { get; set; }
         public string Type { get; set; }
         public Nullable<int> Duration { get; set; }
         public string Description { get; set; }
         public string OtherDetails { get; set; }
         public string Invitations { get; set; }
+        public string Creator { get; set; }
     
         public virtual Address Address { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Booking_Enrollment> Booking_Enrollment { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Character> Characters { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comment> Comments { get; set; }
     }

@@ -5,36 +5,26 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Venue" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="State" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Venue" Type="varchar(max)" Nullable="false" />
+    <Property Name="City" Type="varchar(max)" Nullable="false" />
+    <Property Name="State" Type="varchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Booking_Enrollment">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="UserId" Type="int" />
+    <Property Name="Username" Type="varchar(max)" />
     <Property Name="EventsId" Type="int" />
-  </EntityType>
-  <EntityType Name="Character">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="DatePosted" Type="datetime" Nullable="false" />
-    <Property Name="UserId" Type="int" Nullable="false" />
-    <Property Name="EventId" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Comment">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Comment" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Comment" Type="varchar(max)" Nullable="false" />
     <Property Name="DatePosted" Type="datetime" />
-    <Property Name="UserId" Type="int" />
+    <Property Name="Username" Type="varchar(max)" />
     <Property Name="EventId" Type="int" />
   </EntityType>
   <EntityType Name="Event">
@@ -42,25 +32,26 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Title" Type="varchar(max)" Nullable="false" />
     <Property Name="AddressId" Type="int" Nullable="false" />
-    <Property Name="Date" Type="datetime" Nullable="false" />
-    <Property Name="StartTime" Type="datetime" Nullable="false" />
-    <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="StartTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
     <Property Name="Duration" Type="int" />
     <Property Name="Description" Type="varchar" MaxLength="50" />
-    <Property Name="OtherDetails" Type="varchar" MaxLength="50" />
-    <Property Name="Invitations" Type="varchar" MaxLength="50" />
+    <Property Name="OtherDetails" Type="varchar" MaxLength="500" />
+    <Property Name="Invitations" Type="varchar" MaxLength="5000" />
+    <Property Name="Creator" Type="varchar(max)" />
   </EntityType>
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Type" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar(max)" Nullable="false" />
+    <Property Name="Password" Type="varchar(max)" Nullable="false" />
+    <Property Name="Username" Type="varchar(max)" Nullable="false" />
+    <Property Name="Type" Type="varchar(max)" />
   </EntityType>
   <Association Name="FK_Booking_Enrollment_Events">
     <End Role="Event" Type="Self.Event" Multiplicity="0..1" />
@@ -74,19 +65,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Booking_Enrollment_Users">
-    <End Role="User" Type="Self.User" Multiplicity="0..1" />
-    <End Role="Booking_Enrollment" Type="Self.Booking_Enrollment" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="User">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Booking_Enrollment">
-        <PropertyRef Name="UserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Comments_Events">
+  <Association Name="FK_Comment_Events">
     <End Role="Event" Type="Self.Event" Multiplicity="0..1" />
     <End Role="Comment" Type="Self.Comment" Multiplicity="*" />
     <ReferentialConstraint>
@@ -95,18 +74,6 @@
       </Principal>
       <Dependent Role="Comment">
         <PropertyRef Name="EventId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Comments_Users">
-    <End Role="User" Type="Self.User" Multiplicity="0..1" />
-    <End Role="Comment" Type="Self.Comment" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="User">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Comment">
-        <PropertyRef Name="UserId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -122,34 +89,9 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Role_Event">
-    <End Role="Event" Type="Self.Event" Multiplicity="1" />
-    <End Role="Character" Type="Self.Character" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Event">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Character">
-        <PropertyRef Name="EventId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Role_User">
-    <End Role="User" Type="Self.User" Multiplicity="1" />
-    <End Role="Character" Type="Self.Character" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="User">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Character">
-        <PropertyRef Name="UserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="BookEventManagementModelStoreContainer">
     <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Booking_Enrollment" EntityType="Self.Booking_Enrollment" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Character" EntityType="Self.Character" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Comment" EntityType="Self.Comment" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Event" EntityType="Self.Event" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
@@ -157,29 +99,13 @@
       <End Role="Event" EntitySet="Event" />
       <End Role="Booking_Enrollment" EntitySet="Booking_Enrollment" />
     </AssociationSet>
-    <AssociationSet Name="FK_Booking_Enrollment_Users" Association="Self.FK_Booking_Enrollment_Users">
-      <End Role="User" EntitySet="User" />
-      <End Role="Booking_Enrollment" EntitySet="Booking_Enrollment" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Comments_Events" Association="Self.FK_Comments_Events">
+    <AssociationSet Name="FK_Comment_Events" Association="Self.FK_Comment_Events">
       <End Role="Event" EntitySet="Event" />
-      <End Role="Comment" EntitySet="Comment" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Comments_Users" Association="Self.FK_Comments_Users">
-      <End Role="User" EntitySet="User" />
       <End Role="Comment" EntitySet="Comment" />
     </AssociationSet>
     <AssociationSet Name="FK_Events_Address" Association="Self.FK_Events_Address">
       <End Role="Address" EntitySet="Address" />
       <End Role="Event" EntitySet="Event" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Role_Event" Association="Self.FK_Role_Event">
-      <End Role="Event" EntitySet="Event" />
-      <End Role="Character" EntitySet="Character" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Role_User" Association="Self.FK_Role_User">
-      <End Role="User" EntitySet="User" />
-      <End Role="Character" EntitySet="Character" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

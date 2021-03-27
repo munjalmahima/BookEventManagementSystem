@@ -4,20 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="676a547106d4427c93f310041084776a" Name="Diagram1" ZoomLevel="86">
-        <EntityTypeShape EntityType="BookEventManagementModel.Address" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BookEventManagementModel.Booking_Enrollment" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BookEventManagementModel.Character" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="BookEventManagementModel.Comment" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="BookEventManagementModel.Event" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="BookEventManagementModel.User" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="9e16b9967b2444d7acb3764ba528890e" Name="Diagram1">
+        <EntityTypeShape EntityType="BookEventManagementModel.Address" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookEventManagementModel.Booking_Enrollment" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookEventManagementModel.Comment" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookEventManagementModel.Event" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookEventManagementModel.User" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
         <AssociationConnector Association="BookEventManagementModel.FK_Events_Address" ManuallyRouted="false" />
         <AssociationConnector Association="BookEventManagementModel.FK_Booking_Enrollment_Events" ManuallyRouted="false" />
-        <AssociationConnector Association="BookEventManagementModel.FK_Booking_Enrollment_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="BookEventManagementModel.FK_Role_Event" ManuallyRouted="false" />
-        <AssociationConnector Association="BookEventManagementModel.FK_Role_User" ManuallyRouted="false" />
-        <AssociationConnector Association="BookEventManagementModel.FK_Comments_Events" ManuallyRouted="false" />
-        <AssociationConnector Association="BookEventManagementModel.FK_Comments_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BookEventManagementModel.FK_Comment_Events" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

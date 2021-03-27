@@ -12,7 +12,7 @@ namespace Nagarro.BookEventManagement.Shared
         List<EventDTO> GetAllEvents();
         EventDTO GetEventById(int EventId);
         bool UpdateEvent(EventDTO EventDTO);
-        bool DeleteEvent(EventDTO EventDTO);
+        bool DeleteEvent(EventDTO eventDTO);
 
     }
 }

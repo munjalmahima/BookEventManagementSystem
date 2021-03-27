@@ -27,7 +27,6 @@ namespace Nagarro.BookEventManagement.EntityDataModel
     
         public virtual DbSet<Address> Addresses { get; set; }
         public virtual DbSet<Booking_Enrollment> Booking_Enrollment { get; set; }
-        public virtual DbSet<Character> Characters { get; set; }
         public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Event> Events { get; set; }
         public virtual DbSet<User> Users { get; set; }

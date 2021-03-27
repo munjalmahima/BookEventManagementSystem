@@ -1,0 +1,131 @@
+﻿@model Nagarro.BookEventManagement.Shared.BookingEnrollmentDTO
+
+<h4>Confirm Booking</h4>
+<div class="col-md-6">
+
+
+
+
+    <table class="table table-bordered table-responsive table-hover table-condensed">
+        <tr>
+            <th>
+                Your Booking UserId
+            </th>
+
+            <td>
+                @Html.DisplayFor(model => model.Username)
+            </td>
+        </tr>
+        <tr>
+            <th class="warning">@Html.DisplayNameFor(model => model.Event.Title)</th>
+            <td class="info">
+                @Html.DisplayFor(model => model.Event.Title)
+            </td>
+        </tr>
+        <tr>
+            <th class="warning">
+                @Html.DisplayNameFor(model => model.Event.Address.Venue)
+            </th>
+
+            <td class="info">
+                @Html.DisplayFor(model => model.Event.Address.Venue)
+            </td>
+        </tr>
+        <tr>
+
+            <th class="warning">
+                @Html.DisplayNameFor(model => model.Event.Address.City)
+            </th>
+
+            <td class="info">
+                @Html.DisplayFor(model => model.Event.Address.City)
+            </td>
+        </tr>
+        <tr>
+
+            <th class="warning">
+                @Html.DisplayNameFor(model => model.Event.Address.State)
+            </th>
+
+            <td class="info">
+                @Html.DisplayFor(model => model.Event.Address.State)
+            </td>
+        </tr>
+        <tr>
+
+            <th class="warning">
+                @Html.DisplayNameFor(model => model.Event.Type)
+            </th>
+
+            <td class="info">
+                @Html.DisplayFor(model => model.Event.Type)
+            </td>
+        </tr>
+        <tr>
+            <th class="warning">
+                @Html.DisplayNameFor(model => model.Event.Date)
+            </th>
+
+            <td class="info">
+                @Html.DisplayFor(model => model.Event.Date)
+            </td>
+        </tr>
+        <tr>
+            <th class="warning">
+                @Html.DisplayNameFor(model => model.Event.StartTime)
+            </th>
+
+            <td class="info">
+                @Html.DisplayFor(model => model.Event.StartTime)
+            </td>
+        </tr>
+        <tr>
+            <th class="warning">
+                @Html.DisplayNameFor(model => model.Event.Duration)
+            </th>
+
+            <td class="info">
+                @Html.DisplayFor(model => model.Event.Duration)
+            </td>
+        </tr>
+        <tr>
+            <th class="warning">
+                People Invited
+            </th>
+
+
+            @if (Model.Event.Invitations == null)
+            {
+                <td class="info"> 0 </td>
+            }
+            else
+            {
+                <td class="info"> @Model.Event.Invitations.Split(',').Length </td>
+            }
+        </tr>
+        <tr>
+            <th class="warning">
+                @Html.DisplayNameFor(model => model.Event.Description)
+            </th>
+
+            <td class="info">
+                @Html.DisplayFor(model => model.Event.Description)
+            </td>
+        </tr>
+        <tr></tr>
+    </table>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.EventsId)
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Confirm Booking" class="btn btn-primary btn-large" />
+        </div>
+    }
+</div>
+
+

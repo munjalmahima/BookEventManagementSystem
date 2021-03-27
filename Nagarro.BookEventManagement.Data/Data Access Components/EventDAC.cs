@@ -25,28 +25,21 @@ namespace Nagarro.BookEventManagement.Data
                 {
                     Event e = new Event();
                     Address address = new Address();
+                    
                     EntityConverter.FillEntityFromDTO(eventDTO.Address, address);
 
-                    List<AddressDTO> addressList = new List<AddressDTO>();
-                    foreach (var a in eventContext.Addresses)
-                    {
-                        AddressDTO addressDTO = new AddressDTO();
-                        EntityConverter.FillDTOFromEntity(a, addressDTO);
-                        addressList.Add(addressDTO);
-                    }
-
                     bool flag = false;
-                    foreach (var i in addressList)
+                    foreach (var i in eventContext.Addresses)
                     {
                         if (i.Venue == address.Venue)
                         {
-                            if (i.City == i.City)
+                            if (i.City == address.City)
                             {
-                                if (i.State == i.State)
+                                if (i.State == address.State)
                                 {
                                     address.Id = i.Id;
                                     eventDTO.AddressId = address.Id;
-                                    eventDTO.Address = null;
+                                    //eventDTO.Address = null;
                                     flag = true;
                                     break;
                                 }
@@ -57,14 +50,41 @@ namespace Nagarro.BookEventManagement.Data
 
                     if (flag == false)
                     {
-                        var address1 = eventContext.Addresses.Add(address);
+                        Address address1 = eventContext.Addresses.Add(address);
+                        eventContext.SaveChanges();
+                        foreach (var i in eventContext.Addresses)
+                        {
+                            if (i.Venue == address1.Venue)
+                            {
+                                if (i.City == address1.City)
+                                {
+                                    if (i.State == address1.State)
+                                    {
+                                        address1.Id = i.Id;
+                                        eventDTO.AddressId = address1.Id;
+                                        
+                                    }
+
+                                }
+                            }
+                        }
+                        Console.WriteLine("\n\nAddress Id : "+address1.Id);
                         eventDTO.AddressId = address1.Id;
+                        Console.WriteLine("\n\nAddress Id : " + eventDTO.AddressId);
                     }
 
                     EntityConverter.FillEntityFromDTO(eventDTO, e);
-
-                    eventContext.Events.Add(e);
-                    eventContext.SaveChanges();
+                    try
+                    {
+                        eventContext.Events.Add(e);
+                        eventContext.SaveChanges();
+                    }
+                    catch(Exception ex)
+                    {
+                        ExceptionManager.HandleException(ex);
+                        throw new DACException(ex.Message, ex);
+                    }
+                    
 
                     EntityConverter.FillDTOFromEntity(e, eventDTO);
                     retVal = eventDTO;
@@ -116,20 +136,32 @@ namespace Nagarro.BookEventManagement.Data
         {
             using (BookEventManagementEntities eventContext = new BookEventManagementEntities())
             {
-                Event e = new Event();
-                e = eventContext.Events.Include("Address").SingleOrDefault(ev => ev.Id == eventDTO.Id);
+                Event e= eventContext.Events.Include("Address").SingleOrDefault(ev => ev.Id == eventDTO.Id);
                 
                 if(e!=null)
                 {
-                    
-                    EntityConverter.FillEntityFromDTO(eventDTO,e);
+                 
+                    foreach(var i in eventContext.Addresses)
+                    {
+                        if(i.Id==eventDTO.AddressId)
+                        {
+                           
+                            i.Venue = eventDTO.Address.Venue;
+                            i.City = eventDTO.Address.City;
+                            i.State = eventDTO.Address.State;
+                        }
+                    }
+                   
+                    EntityConverter.FillEntityFromDTO(eventDTO, e);
+                   
                     try
                     {
+                     
                         eventContext.SaveChanges();
                     }
-                    catch (Exception ex)
+                    catch 
                     {
-                        throw new DACException("No records found to update.",ex);
+                        return false;
                     } 
                 }
 
@@ -142,19 +174,25 @@ namespace Nagarro.BookEventManagement.Data
             using (BookEventManagementEntities eventContext = new BookEventManagementEntities())
             {
 
-                Event e=eventContext.Events.Include("Address").SingleOrDefault(ev => ev.Id == eventDTO.Id);
-                
-                if(e!=null)
+                Event e=eventContext.Events.SingleOrDefault(ev => ev.Id ==eventDTO.Id);
+                var comments = eventContext.Comments.Where(comment => comment.EventId == eventDTO.Id).Select(comment => comment);
+                var bookings = eventContext.Booking_Enrollment.Where(booking => booking.EventsId == eventDTO.Id).Select(booking =>booking);
+
+                if (e!=null)
                 {
                     eventContext.Events.Remove(e);
+                    foreach(var i in comments)
+                        eventContext.Comments.Remove(i);
+                    foreach (var i in bookings)
+                        eventContext.Booking_Enrollment.Remove(i);
                     try
                     {
                         eventContext.SaveChanges();
                     }
                     catch
                     {
-                        Console.WriteLine("Error");
                         return false;
+                        
                     }
 
                 }

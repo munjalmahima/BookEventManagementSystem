@@ -21,28 +21,38 @@ namespace Nagarro.BookEventManagement.Data
             BookingEnrollmentDTO retVal = null;
             try
             {
-                using (BookEventManagementEntities dbContext = new BookEventManagementEntities())
+                using (BookEventManagementEntities bookingContext = new BookEventManagementEntities())
                 {
+
                     Booking_Enrollment bookingEnrollment = new Booking_Enrollment();
+                   
                     EntityConverter.FillEntityFromDTO(bookingEnrollmentDTO, bookingEnrollment);
 
                     bool flag = false;
-                    foreach (var booking in dbContext.Booking_Enrollment)
+                   
+                    var bookings = bookingContext.Booking_Enrollment.Where(booking => booking.EventsId == bookingEnrollmentDTO.EventsId).Where(booking => booking.Username == bookingEnrollmentDTO.Username).Select(booking => booking);
+                    foreach(var booking in bookings)
                     {
-                        if ((booking.EventsId == bookingEnrollmentDTO.EventsId) &&
-                            (booking.UserId == bookingEnrollmentDTO.UserId))
+                        
+                        bookingEnrollmentDTO.Id = booking.Id;
+                        flag = true;
+                    }
+                    if (flag==false)
+                    {
+                        bookingContext.Booking_Enrollment.Add(bookingEnrollment);
+                        try
                         {
-                            bookingEnrollmentDTO.Id = booking.Id;
-                            flag = true;
+                            bookingContext.SaveChanges();
                         }
-                            
+                        catch (Exception ex)
+                        {
+                            ExceptionManager.HandleException(ex);
+                            throw new DACException(ex.Message, ex);
+                        }
+
+
                     }
-                    if(flag==false)
-                    {
-                        dbContext.Booking_Enrollment.Add(bookingEnrollment);
-                        dbContext.SaveChanges();
-                    }
-                    
+
 
                     EntityConverter.FillDTOFromEntity(bookingEnrollment, bookingEnrollmentDTO);
                     retVal = bookingEnrollmentDTO;
@@ -57,7 +67,7 @@ namespace Nagarro.BookEventManagement.Data
             return retVal;
         }
 
-        public List<EventDTO> GetAllEventsOfAUser(int UserId)
+        public List<EventDTO> GetAllEventsOfAUser(string Username)
         {
             List<int> EventIdList = new List<int>();
             List<EventDTO> EventList = new List<EventDTO>();
@@ -66,8 +76,8 @@ namespace Nagarro.BookEventManagement.Data
             using (var bookingEnrollmentContext = new BookEventManagementEntities())
             {
                 foreach (var i in bookingEnrollmentContext.Booking_Enrollment)
-                {
-                    if (i.UserId == UserId)
+                { 
+                    if (i.Username == Username)
                         EventIdList.Add((int)i.EventsId);
                 }
 
@@ -92,25 +102,26 @@ namespace Nagarro.BookEventManagement.Data
 
         public List<UserDTO> GetAllUsersOfAEvent(int EventId)
         {
-            List<int> UserIdList = new List<int>();
+            List<string> UsernameList = new List<string>();
             List<UserDTO> UserList = new List<UserDTO>();
             using (var bookingEnrollmentContext = new BookEventManagementEntities())
             {
                 foreach (var i in bookingEnrollmentContext.Booking_Enrollment)
                 {
                     if (i.EventsId == EventId)
-                        UserIdList.Add((int)i.UserId);
+                        UsernameList.Add(i.Username);
                 }
 
-                foreach(var userId in UserIdList)
+                foreach(var Username in UsernameList)
                 {
                     UserDTO userDTO = new UserDTO();
-                    var User= bookingEnrollmentContext.Users.FirstOrDefault(user => user.Id==userId);
-                    if (User!= null)
+                    var User= bookingEnrollmentContext.Users.FirstOrDefault(user =>user.Username==Username.Trim());
+                    if (User!= null && User.Id!=-1)
                     {
                         EntityConverter.FillDTOFromEntity(User, userDTO);
+                        UserList.Add(userDTO);
                     }
-                    UserList.Add(userDTO);
+                  
                 }
 
             }

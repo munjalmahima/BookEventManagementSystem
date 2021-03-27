@@ -38,10 +38,10 @@ namespace Nagarro.BookEventManagement.Business
 
         
 
-        public List<EventDTO> GetAllEventsOfAUser(int UserId)
+        public List<EventDTO> GetAllEventsOfAUser(string Username)
         {
             IBookingEnrollmentDAC bookingDAC = (IBookingEnrollmentDAC)dacFactory.Create(DACType.BookingEnrollmentDAC);
-            return bookingDAC.GetAllEventsOfAUser(UserId);
+            return bookingDAC.GetAllEventsOfAUser(Username);
         }
 
         public List<UserDTO> GetAllUsersOfAEvent(int EventId)

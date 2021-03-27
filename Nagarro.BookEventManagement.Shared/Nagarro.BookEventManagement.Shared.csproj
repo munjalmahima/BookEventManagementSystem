@@ -57,7 +57,6 @@
     <Compile Include="Functional\DataAccessComponents\IUserDAC.cs" />
     <Compile Include="Functional\DataTransferObjects\AddressDTO.cs" />
     <Compile Include="Functional\DataTransferObjects\BookingEnrollmentDTO.cs" />
-    <Compile Include="Functional\DataTransferObjects\CharacterDTO.cs" />
     <Compile Include="Functional\DataTransferObjects\CommentDTO.cs" />
     <Compile Include="Functional\DataTransferObjects\EventDTO.cs" />
     <Compile Include="Functional\DataTransferObjects\UserDTO.cs" />
@@ -105,7 +104,9 @@
     <Compile Include="Infrastructure\Common\Validations\NagarroSampleValidationResult.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -76,9 +76,6 @@
     <Compile Include="Booking_Enrollment.cs">
       <DependentUpon>BookEventManagement.tt</DependentUpon>
     </Compile>
-    <Compile Include="Character.cs">
-      <DependentUpon>BookEventManagement.tt</DependentUpon>
-    </Compile>
     <Compile Include="Comment.cs">
       <DependentUpon>BookEventManagement.tt</DependentUpon>
     </Compile>

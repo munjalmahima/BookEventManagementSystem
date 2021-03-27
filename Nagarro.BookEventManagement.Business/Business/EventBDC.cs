@@ -72,10 +72,10 @@ namespace Nagarro.BookEventManagement.Business
             return retVal;
         }
 
-        public bool DeleteEvent(EventDTO EventDTO)
+        public bool DeleteEvent(EventDTO eventDTO)
         {
             IEventDAC eventDAC = (IEventDAC)dacFactory.Create(DACType.EventDAC);
-            return eventDAC.DeleteEvent(EventDTO);
+            return eventDAC.DeleteEvent(eventDTO);
         }
 
         public EventDTO GetEventById(int EventId)
@@ -94,7 +94,10 @@ namespace Nagarro.BookEventManagement.Business
         {
             IEventDAC eventDAC = (IEventDAC)dacFactory.Create(DACType.EventDAC);
             List<EventDTO> result = eventDAC.GetAllEvents();
-            return result;
+            var newList = result.OrderByDescending(x=>x.Date);
+
+
+            return newList.ToList();
         }
 
         public bool UpdateEvent(EventDTO EventDTO)

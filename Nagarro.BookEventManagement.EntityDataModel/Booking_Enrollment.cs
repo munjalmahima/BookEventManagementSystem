@@ -15,10 +15,9 @@ namespace Nagarro.BookEventManagement.EntityDataModel
     public partial class Booking_Enrollment
     {
         public int Id { get; set; }
-        public Nullable<int> UserId { get; set; }
+        public string Username { get; set; }
         public Nullable<int> EventsId { get; set; }
     
         public virtual Event Event { get; set; }
-        public virtual User User { get; set; }
     }
 }

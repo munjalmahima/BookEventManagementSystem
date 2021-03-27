@@ -14,12 +14,12 @@ namespace Nagarro.BookEventManagement.Tests
         private readonly Mock<IDACFactory> mockDacFactory;
         private readonly Mock<IEventDAC> mockEventDac;
 
-        private EventDTO eventDTO = new EventDTO
+        public EventDTO eventDTO = new EventDTO
         {
-            Title = "Book=A=Fiesta",
+            Title = "Book-A-Fiesta",
             AddressId = 30,
             Date = DateTime.Today,
-            StartTime = DateTime.Now,
+            StartTime = new TimeSpan(3,5,6),
             Duration = 4,
             Description = "Mahima",
             OtherDetails = "Nothing",

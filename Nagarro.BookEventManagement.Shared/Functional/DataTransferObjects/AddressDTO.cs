@@ -10,6 +10,10 @@ namespace Nagarro.BookEventManagement.Shared
     [EntityMapping("Address", MappingType.TotalExplicit)]
     public class AddressDTO:DTOBase
     {
+        public AddressDTO()
+        {
+           Id = -1;
+        }
         [EntityPropertyMapping(MappingDirectionType.Both, "Id")]
         public int Id { get; set; }
 

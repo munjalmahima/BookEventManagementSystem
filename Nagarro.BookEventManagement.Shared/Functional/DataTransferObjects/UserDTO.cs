@@ -11,6 +11,7 @@ namespace Nagarro.BookEventManagement.Shared
     {
         public UserDTO()
         {
+            Id = -1;
             Type = "normal";
         }
 
@@ -23,7 +24,7 @@ namespace Nagarro.BookEventManagement.Shared
         [EntityPropertyMapping(MappingDirectionType.Both, "Password")]
         public string Password { get; set; }
 
-        [EntityPropertyMapping(MappingDirectionType.Both, "Name")]
+        [EntityPropertyMapping(MappingDirectionType.Both, "Username")]
         public string Name { get; set; }
 
         [EntityPropertyMapping(MappingDirectionType.Both, "Type")]

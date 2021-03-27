@@ -17,10 +17,9 @@ namespace Nagarro.BookEventManagement.EntityDataModel
         public int Id { get; set; }
         public string Comment1 { get; set; }
         public Nullable<System.DateTime> DatePosted { get; set; }
-        public Nullable<int> UserId { get; set; }
+        public string Username { get; set; }
         public Nullable<int> EventId { get; set; }
     
         public virtual Event Event { get; set; }
-        public virtual User User { get; set; }
     }
 }

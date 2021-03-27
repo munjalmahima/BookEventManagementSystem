@@ -21,10 +21,10 @@ namespace Nagarro.BookEventManagement.BusinessFacades
             return eventBDC.CreateEvent(eventDTO);
         }
 
-        public bool DeleteEvent(EventDTO EventDTO)
+        public bool DeleteEvent(EventDTO eventDTO)
         {
             IEventBDC eventBDC = (IEventBDC)BDCFactory.Instance.Create(BDCType.EventBDC);
-            return eventBDC.DeleteEvent(EventDTO);
+            return eventBDC.DeleteEvent(eventDTO);
         }
 
         public EventDTO GetEventById(int EventId)

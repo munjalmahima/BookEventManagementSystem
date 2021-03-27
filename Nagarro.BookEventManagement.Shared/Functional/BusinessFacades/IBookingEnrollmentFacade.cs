@@ -10,6 +10,6 @@ namespace Nagarro.BookEventManagement.Shared
     {
         BookingEnrollmentDTO CreateBooking(BookingEnrollmentDTO bookingEnrollmentDTO);
         List<UserDTO> GetAllUsersOfAEvent(int EventId);
-        List<EventDTO> GetAllEventsOfAUser(int UserId); 
+        List<EventDTO> GetAllEventsOfAUser(string Username); 
     }
 }

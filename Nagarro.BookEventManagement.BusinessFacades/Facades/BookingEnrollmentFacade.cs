@@ -22,10 +22,10 @@ namespace Nagarro.BookEventManagement.BusinessFacades
         }
 
         
-        public List<EventDTO> GetAllEventsOfAUser(int UserId)
+        public List<EventDTO> GetAllEventsOfAUser(string Username)
         {
             IBookingEnrollmentBDC bookingBDC = (IBookingEnrollmentBDC)BDCFactory.Instance.Create(BDCType.BookingEnrollmentBDC);
-            return bookingBDC.GetAllEventsOfAUser(UserId);
+            return bookingBDC.GetAllEventsOfAUser(Username);
         }
 
         public List<UserDTO> GetAllUsersOfAEvent(int EventId)

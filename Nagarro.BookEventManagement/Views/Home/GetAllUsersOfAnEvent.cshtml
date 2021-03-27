@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Nagarro.BookEventManagement.Shared.UserDTO>
+<h2>All Registered users of this Event</h2>
+<div class="col-md-6">
+    <table class="table table-bordered table-responsive table-hover table-striped table-bordered table-condensed">
+        <tr class="warning">
+            <th>
+                Email
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="info">
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

@@ -10,3 +10,4 @@ C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.Boo
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Shared\obj\Debug\Nagarro.BookEventManagement.Shared.csproj.CoreCompileInputs.cache
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Shared\obj\Debug\Nagarro.BookEventManagement.Shared.dll
 C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Shared\obj\Debug\Nagarro.BookEventManagement.Shared.pdb
+C:\Users\mahimamunjal\OneDrive - Nagarro\Desktop\BookEventManagement\Nagarro.BookEventManagement.Shared\obj\Debug\Nagarro.BookEventManagement.Shared.csprojAssemblyReference.cache
